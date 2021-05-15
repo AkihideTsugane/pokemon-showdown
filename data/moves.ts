@@ -748,10 +748,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 	aurorabeam: {
 		num: 62,
 		accuracy: 100,
-		basePower: 65,
+		basePower: 75,
 		category: "Special",
 		name: "Aurora Beam",
-		pp: 20,
+		pp: 15,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		secondary: {
@@ -1303,8 +1303,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	blazekick: {
 		num: 299,
-		accuracy: 90,
-		basePower: 85,
+		accuracy: 100,
+		basePower: 90,
 		category: "Physical",
 		name: "Blaze Kick",
 		pp: 10,
@@ -1720,10 +1720,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 	bubblebeam: {
 		num: 61,
 		accuracy: 100,
-		basePower: 65,
+		basePower: 75,
 		category: "Special",
 		name: "Bubble Beam",
-		pp: 20,
+		pp: 15,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		secondary: {
@@ -2097,11 +2097,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 	chatter: {
 		num: 448,
 		accuracy: 100,
-		basePower: 65,
+		basePower: 90,
 		category: "Special",
 		isNonstandard: "Past",
 		name: "Chatter",
-		pp: 20,
+		pp: 15,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, sound: 1, distance: 1, authentic: 1},
 		noSketch: true,
@@ -2843,10 +2843,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 	crosspoison: {
 		num: 440,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 90,
 		category: "Physical",
 		name: "Cross Poison",
-		pp: 20,
+		pp: 15,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
@@ -2960,16 +2960,17 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	cut: {
 		num: 15,
-		accuracy: 95,
-		basePower: 50,
+		accuracy: 100,
+		basePower: 60,
 		category: "Physical",
 		name: "Cut",
-		pp: 30,
+		pp: 25,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
+		critRatio: 2,
 		secondary: null,
 		target: "normal",
-		type: "Normal",
+		type: "Grass",
 		contestType: "Cool",
 	},
 	darkestlariat: {
@@ -3362,7 +3363,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	disarmingvoice: {
 		num: 574,
 		accuracy: true,
-		basePower: 40,
+		basePower: 50,
 		category: "Special",
 		name: "Disarming Voice",
 		pp: 15,
@@ -3790,13 +3791,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 	drainingkiss: {
 		num: 577,
 		accuracy: 100,
-		basePower: 50,
+		basePower: 70,
 		category: "Special",
 		name: "Draining Kiss",
 		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, heal: 1},
-		drain: [3, 4],
+		drain: [1, 2],
 		secondary: null,
 		target: "normal",
 		type: "Fairy",
@@ -5104,10 +5105,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 	flamewheel: {
 		num: 172,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 75,
 		category: "Physical",
 		name: "Flame Wheel",
-		pp: 25,
+		pp: 15,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, defrost: 1},
 		secondary: {
@@ -5374,8 +5375,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	fly: {
 		num: 19,
-		accuracy: 95,
-		basePower: 90,
+		accuracy: 100,
+		basePower: 100,
 		category: "Physical",
 		name: "Fly",
 		pp: 15,
@@ -8512,10 +8513,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				break;
 			}
 		},
-		secondary: {
-			chance: 30,
-			volatileStatus: 'confusion',
-		},
+		secondary: null,
 		target: "any",
 		type: "Flying",
 		contestType: "Tough",
@@ -11811,7 +11809,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	needlearm: {
 		num: 302,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 90,
 		category: "Physical",
 		isNonstandard: "Past",
 		name: "Needle Arm",
@@ -12624,8 +12622,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	poisonfang: {
 		num: 305,
-		accuracy: 100,
-		basePower: 50,
+		accuracy: 95,
+		basePower: 65,
 		category: "Physical",
 		name: "Poison Fang",
 		pp: 15,
@@ -12708,10 +12706,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 	poisontail: {
 		num: 342,
 		accuracy: 100,
-		basePower: 50,
+		basePower: 90,
 		category: "Physical",
 		name: "Poison Tail",
-		pp: 25,
+		pp: 15,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		critRatio: 2,
@@ -14176,12 +14174,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	rockclimb: {
 		num: 431,
-		accuracy: 85,
-		basePower: 90,
+		accuracy: 95,
+		basePower: 80,
 		category: "Physical",
 		isNonstandard: "Past",
 		name: "Rock Climb",
-		pp: 20,
+		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
@@ -14189,7 +14187,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			volatileStatus: 'confusion',
 		},
 		target: "normal",
-		type: "Normal",
+		type: "Rock",
 		contestType: "Tough",
 	},
 	rockpolish: {
@@ -14230,7 +14228,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	rocksmash: {
 		num: 249,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 60,
 		category: "Physical",
 		name: "Rock Smash",
 		pp: 15,
@@ -14970,7 +14968,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	shadowclaw: {
 		num: 421,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 80,
 		category: "Physical",
 		name: "Shadow Claw",
 		pp: 15,
@@ -15015,10 +15013,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 	shadowpunch: {
 		num: 325,
 		accuracy: true,
-		basePower: 60,
+		basePower: 80,
 		category: "Physical",
 		name: "Shadow Punch",
-		pp: 20,
+		pp: 15,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
 		secondary: null,
@@ -15773,10 +15771,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 	sludge: {
 		num: 124,
 		accuracy: 100,
-		basePower: 65,
+		basePower: 75,
 		category: "Special",
 		name: "Sludge",
-		pp: 20,
+		pp: 15,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		secondary: {
@@ -16955,13 +16953,20 @@ export const Moves: {[moveid: string]: MoveData} = {
 	strength: {
 		num: 70,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 100,
 		category: "Physical",
 		name: "Strength",
 		pp: 15,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
-		secondary: null,
+		secondary: {
+			chance: 10,
+			self: {
+				boosts: {
+					atk: 1,
+				},
+			},
+		},
 		target: "normal",
 		type: "Normal",
 		contestType: "Tough",
@@ -19308,7 +19313,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	wildcharge: {
 		num: 528,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 100,
 		category: "Physical",
 		name: "Wild Charge",
 		pp: 15,
