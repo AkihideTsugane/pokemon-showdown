@@ -3791,7 +3791,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	drainingkiss: {
 		num: 577,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 75,
 		category: "Special",
 		name: "Draining Kiss",
 		pp: 10,
